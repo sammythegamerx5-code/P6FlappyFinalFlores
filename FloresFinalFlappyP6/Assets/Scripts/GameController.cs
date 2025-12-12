@@ -4,11 +4,12 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameController : MonoBehaviour
+public class GameControl : MonoBehaviour
 {
-    public static GameController instance;
+    public static GameControl instance;
     public GameObject gameOverText;
     public bool gameOver = false;
+    public float scrollSpeed = -1.5f;
     // Start is called before the first frame update
     void Awake()
     {
